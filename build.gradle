@@ -1,0 +1,25 @@
+apply plugin: 'application'
+apply plugin: 'java'
+
+ 
+ 
+mainClassName = 'tung.mainClass'
+
+repositories {
+	mavenCentral()
+}
+
+sourceCompatibility = 1.8 // The Java language level to use to compile the source files. 
+targetCompatibility = 1.8 // The target JVM to generate the .class files for. 
+ 
+dependencies {
+     compile "joda-time:joda-time:2.10.4"
+     testCompile "junit:junit:4.12"
+} 
+
+
+
+jar {
+     baseName = 'techup-devops'
+     version =  '0.0.2' 
+} 
